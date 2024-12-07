@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e1f5fe;  /* สีฟ้าพาสเทลที่ให้ความรู้สึกสดชื่น */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    font-family: 'Itim', sans-serif;
+}
+
+.container {
+    background-color: #ffffff;  /* พื้นหลังสีขาวเพื่อให้ดูสะอาดตา */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;  /* ขยายขนาดของคอนเทนเนอร์ */
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงเมื่อ hover */
+    font-family: 'Itim', sans-serif;
+}
+
+.container:hover {
+    transform: translateY(-10px); /* ทำให้ยกขึ้นเล็กน้อยเมื่อ hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ hover */
+    font-family: 'Itim', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #0277bd; /* เปลี่ยนสีหัวข้อเป็นสีน้ำเงินฟ้าพาสเทล */
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Itim', sans-serif;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #4e8ad0;  /* สีฟ้าที่สว่างขึ้น */
+    display: block;
+    font-family: 'Itim', sans-serif;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #a7c9e9; /* กรอบสีน้ำเงินอ่อน */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f0faff; /* พื้นหลังสีฟ้าสว่าง */
+    transition: all 0.3s ease-in-out;
+    font-family: 'Itim', sans-serif;
+}
+
+input[type="number"]:focus {
+    border-color: #0277bd;  /* เปลี่ยนสีกรอบเมื่ออยู่ในโฟกัส */
+    outline: none;
+    background-color: #e1f5fe; /* เปลี่ยนสีพื้นหลังเมื่อโฟกัส */
+    font-family: 'Itim', sans-serif;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Itim', sans-serif;
+}
+
+#result p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Itim', sans-serif;
+}

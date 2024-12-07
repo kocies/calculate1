@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('p1980.jpg') no-repeat;
+    font-family: 'Itim', sans-serif; /* ฟอนต์หลักสำหรับ body */
+    background-size: cover;  /* ทำให้ภาพขยายเต็มหน้าจอ */
+    background-position: center;  /* จัดตำแหน่งภาพให้ตรงกลาง */
+    background-attachment: fixed;  /* ทำให้พื้นหลังคงที่ขณะเลื่อนหน้าจอ */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-family: 'Itim', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc; /* สีขอบของ input */
+    border-radius: 10px; /* ขอบมน */
+    background-color: #fff; /* พื้นหลัง */
+    outline: none; /* เอาการเลือก border รอบ input ออก */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* เงาเล็กน้อยรอบๆ */
+    transition: all 0.3s ease; /* ทำให้การเปลี่ยนแปลงลื่นไหล */
+    font-family: 'Itim', sans-serif;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #5e9dff; /* เปลี่ยนสีขอบเมื่อ input โฟกัส */
+    box-shadow: 0 0 10px rgba(94, 157, 255, 0.6); /* เพิ่มเงาสีฟ้า */
+}
+
+input[type="text"]:hover, input[type="number"]:hover {
+    border-color: #a0c8ff; /* เปลี่ยนสีขอบเมื่อเมาส์อยู่เหนือ input */
+}
+
+button {
+    padding: 5px ;  /* ขนาดปุ่ม */
+    font-size: 16px;      /* ขนาดฟอนต์ */
+    border: none;        /* เอาขอบปุ่มออก */
+    border-radius: 8px;  /* มุมโค้งมน */
+    cursor: pointer;     /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ที่ปุ่ม */
+    background-color: #5fc8cc; /* สีพื้นหลังปุ่ม */
+    color: white;         /* สีตัวอักษร */
+    transition: all 0.3s ease;
+    font-family: 'Itim', sans-serif; /* การเปลี่ยนแปลงที่ราบรื่น */
+}
+
+/* เอฟเฟกต์เมื่อวางเมาส์เหนือปุ่ม */
+button:hover {
+    background-color: #45a049; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    transform: scale(1.1);  /* ขยายขนาดปุ่มเล็กน้อย */
+}
+
+/* เอฟเฟกต์เมื่อคลิกปุ่ม */
+button:active {
+    background-color: #3e8e41; /* เปลี่ยนสีพื้นหลังเมื่อคลิก */
+    transform: scale(0.98);  /* ลดขนาดปุ่มเล็กน้อยขณะคลิก */
+}
+
+/* ปุ่มที่ถูกทำให้เป็นปุ่มที่มีขอบ */
+.outline-button {
+    background-color: white;   /* พื้นหลังเป็นสีขาว */
+    border: 2px solid #5fc8cc; /* ขอบปุ่มสีเขียว */
+    color: #5fc8cc;            /* ตัวอักษรสีเขียว */
+}
+
+/* เอฟเฟกต์ปุ่มขอบเมื่อ hover */
+.outline-button:hover {
+    background-color: #5fc8cc;  /* เปลี่ยนพื้นหลังเมื่อ hover */
+    color: white;               /* เปลี่ยนสีตัวอักษรเมื่อ hover */
+}
+
+textarea {  /* เพิ่ม textarea และ input */
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Itim', sans-serif; /* ใช้ฟอนต์เดียวกันใน input และ textarea */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Itim', sans-serif;
+}

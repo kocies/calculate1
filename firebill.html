@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculateElectricityBill</title>
+    <link rel="stylesheet" href="firebill.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CalculateElectricityBill</h1>
+
+        <!-- Input สำหรับจำนวนยูนิต -->
+        <label for="units">กรุณากรอกจำนวนยูนิต (kWh): </label>
+        <input type="number" id="units" name="units" oninput="calculateElectricityBill()" placeholder="กรอกจำนวนยูนิต" min="1">
+
+        <div id="result">ผลลัพธ์จะถูกแสดงที่นี่</div>
+    </div>
+
+    <script src="firebill.js"></script>
+</body>
+</html>
