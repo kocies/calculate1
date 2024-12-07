@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('doll.webp') no-repeat center center; /* เพิ่ม no-repeat และ center */
+    background-size: cover; /* ให้พื้นหลังขยายเต็มหน้าจอ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Itim', sans-serif;
+}
+
+.converter-container {
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    color: #84ff00;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    font-family: 'Itim', sans-serif;
+}
+
+.converter-box {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Itim', sans-serif;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: 'Itim', sans-serif;
+}
+
+label {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Itim', sans-serif;
+}
+
+input, select {
+    flex: 2;
+    padding: 10px;
+    margin: 0 5px;
+    color: #ffffff;
+    background-color: rgba(235, 71, 131, 0.46);
+    border: 1px solid #e48b8b;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Itim', sans-serif;
+}
+
+input::placeholder, select::placeholder {
+    color: #eaff47; /* เปลี่ยนสีให้เป็นสีที่คุณต้องการ */
+    font-family: 'Itim', sans-serif;
+}
+
+.swap-icon {
+    font-size: 24px;
+    color: #2d5f95;
+    cursor: pointer;
+    margin: 0 10px;
+    font-family: 'Itim', sans-serif;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: 'Itim', sans-serif;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: #49ffdb;
+    font-family: 'Itim', sans-serif;
+}
